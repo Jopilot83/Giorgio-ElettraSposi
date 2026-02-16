@@ -228,7 +228,6 @@
     
     .elegant-border::before,
     .elegant-border::after {
-      content: '✦';
       position: absolute;
       color: var(--accent-gold);
       font-size: 10px;
@@ -296,9 +295,13 @@
     }
     
     .countdown-item {
-      text-align: center;
-      padding: 1rem;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
     
     .countdown-number {
       font-size: clamp(1.4rem, 6vw, 2.5rem);
@@ -987,21 +990,26 @@
   <div class="relative inline-block">
     
     <img
-      src="images/Bouquet1.png"
+      src="images/Sposi.png"
       alt="Le fedi nuziali"
-      class="max-w-xs md:max-w-sm rounded-xl object-cover 
+      class="max-w-xs md:max-w-sm rounded-xl object-cover
              transition-all duration-500
              hover:scale-105"
       style="
         filter: 
-          saturate(1.2)
-          contrast(1.1)
+          saturate(0.6)
+          contrast(1.0)
       "
     >
 
   </div>
 </div>
-       <h2 class="font-script-elegant text-7xl md:text-8xl text-dark mb-6 leading-tight" id="heroNames">Elettra  e  Giorgio</h2>
+      <h2 class="font-script-elegant 
+           text-[15vw] md:text-7xl lg:text-8xl
+           text-dark mb-6 leading-tight whitespace-nowrap"
+    id="heroNames">
+  Elettra e Giorgio
+</h2>
        <div class="ornament mb-8">
         <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -1538,9 +1546,9 @@
       <div class="card p-8 text-center bg-champagne-accent">
       <div class="mb-6 flex justify-center">
   <img
-    src="images/regalo.jpg"
+    src="images/regalo.png"
     alt="Regalo"
-    class="w-20 h-auto opacity-80"
+    class="w-24 md:w-28 lg:w[92px] h-auto opacity-90"
   >
 </div>
 
@@ -1842,7 +1850,7 @@ Contatti
   class="w-6 h-6 text-gold"
   fill="currentColor"
 >
-  <path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
+  <path d="M12 2.005c-.777 0 -1.508 .367 -1.971 .99l-5.362 6.895c-.89 1.136 -.89 3.083 0 4.227l5.375 6.911a2.457 2.457 0 0 0 3.93 -.017l5.361 -6.894c.89 -1.136 .89 -3.083 0 -4.227l-5.375 -6.911a2.446 2.446 0 0 0 -1.958 -.974z" />
 </svg>
        </div>
        <p class="font-serif-elegant text-2xl italic">"Non vediamo l'ora di condividere<br>
